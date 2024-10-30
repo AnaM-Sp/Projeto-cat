@@ -1,0 +1,19 @@
+{{>partials/header}}
+
+{{#banner}}
+<section class="banner" style="background-image: url('images//{{background}}')">Todos os gatos</section>
+<h2>{{title}}</h2>
+{{/banner}}
+
+<div class="container list">
+    <div class="item">
+    {{#banner}}
+        <img src="images//{{background}}" class="item--image" />
+        {{/banner}}
+        <div class="item--name">{{title}}</div>
+        <div class="item--color">Cor: Castanho e chocolate.</div>
+        <div class="item--genre">Gênero: Masculino</div>
+    </div>
+    
+
+{{>partials/footer}}
