@@ -11,8 +11,7 @@ let returnObject = {
 }
 if(activeMenu !== ''){
     returnObject[activeMenu] = true 
-} else{
-    return returnObject
 }
+    return returnObject
 
 }
