@@ -8,6 +8,6 @@ router.get('/',PageController.home)
 router.get('/gatos',PageController.gatos)
 router.get('/acessorios',PageController.acessorios)
 
-router.get('/pesquisePorRaca',PageController.pesquisePorRaca)
+router.get('/search',SearchController.search)
 
 export default router

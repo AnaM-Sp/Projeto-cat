@@ -1,19 +1,24 @@
 {{>partials/header}}
 
 {{#banner}}
-<section class="banner" style="background-image: url('images//{{background}}')">Todos os gatos</section>
+<section class="banner" style="background-image: url('images//{{background}}')">Todos os gatos e acessórios</section>
 <h2>{{title}}</h2>
 {{/banner}}
 
 <div class="container list">
+{{#list}}
     <div class="item">
-    {{#banner}}
-        <img src="images//{{background}}" class="item--image" />
-        {{/banner}}
-        <div class="item--name">{{title}}</div>
-        <div class="item--color">Cor: Castanho e chocolate.</div>
-        <div class="item--genre">Gênero: Masculino</div>
+        <img src="images/{{image}}" class="item--image" />
+        <div class="item--name">{{name}}</div>
+        <div class="item--color">Cor: {{color}}.</div>
+        <div class="item--genre">Gênero:{{sex}}</div>
+        {{/list}}
     </div>
     
+    {{^list}}
+    <div class="container nolist">
+    <h2>Não encontramos animais disponíveis com esse nome </h2>
+    </div>
+    {{/list}}
 
 {{>partials/footer}}
