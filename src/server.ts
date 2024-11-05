@@ -20,9 +20,5 @@ server.use((req,res)=>{
     res.render('pages/404')
 })
 
-server.use((req,res)=>{
-    res.send("Pagina não encontrada")
-})
-
 // Acessando servidor
 server.listen(process.env.PORT)
